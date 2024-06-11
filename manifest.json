@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Dispatch Planning",
+  "version": "1.0.0",
+  "action": { "default_popup": "index.html" },
+  "permissions": ["identity"],
+  "oauth2": {
+    "client_id": "112465121019-eb2j63i50kjo0ndvd0tib87du5ppqntk.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar",
+      "https://www.googleapis.com/auth/userinfo.profile",
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/tasks"
+    ]
+  },
+
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  }
+}
